@@ -1,9 +1,6 @@
 from django.shortcuts import render
 from productos.models import Producto
 
-def mostrarIndex(request):
-    return render(request, 'productos/index.html')
-
 def mostrarListado(request):
     pro = Producto.objects.all().values()
     print(pro)

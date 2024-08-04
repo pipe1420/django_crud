@@ -4,8 +4,8 @@ from django.shortcuts import render, get_object_or_404, redirect
 from usuarios.models import Usuario
 from .forms import UsuarioForm
 
-def mostrarIndexUsuarios(request):
-    return render(request, 'usuarios/index.html')
+""" def mostrarIndexUsuarios(request):
+    return render(request, 'usuarios/index.html') """
 
 def listarUsuarios(request):
     usu = Usuario.objects.all().values()
